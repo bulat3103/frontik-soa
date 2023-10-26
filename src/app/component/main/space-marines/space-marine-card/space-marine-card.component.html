@@ -1,0 +1,77 @@
+<mat-card class="marine__card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ marine.name }}</mat-card-title>
+    <mat-card-subtitle>{{ marine.category }}</mat-card-subtitle>
+  </mat-card-header>
+  <div class="marine__card_id">{{ marine.id }}</div>
+  <mat-card-content style="flex: 1 0 auto">
+    <div class="marine__main-part">
+      <div class="marine__coordinates">
+        <p>coordinates</p>
+        <p class="brace">{{ "{" }}</p>
+        <div class="xy-coord">
+          <p>x: {{ marine.coordinates.x }}</p>
+          <p>y: {{ marine.coordinates.y }}</p>
+        </div>
+      </div>
+    </div>
+    <p>CreationDate: {{ marine.creationDate }}</p>
+    <div class="marine__info-block">
+      <div class="marine__info">
+        <img src="assets/img/hearts64.png" height="25" width="25" />
+        <p>{{ marine.health }}</p>
+      </div>
+      <div class="marine__info">
+        <p>heartCount: {{ marine.heartCount }}</p>
+      </div>
+      <div class="marine__info">
+        <img src="assets/img/star.png" height="25" width="25" />
+        <p>{{ marine.achievements }}</p>
+      </div>
+    </div>
+
+    <div class="starship__info-block" *ngIf="marine.starShip">
+      STARSHIP: "{{ marine.starShip.name }}"
+      <div class="marine__card_id starship-id">
+        id: {{ marine.starShip.id }}
+      </div>
+      <div class="marine__coordinates">
+        <p>coordinates</p>
+        <p class="brace">{{ "{" }}</p>
+        <div class="xy-coord">
+          <p>x: {{ marine.starShip.coordinates.x }}</p>
+          <p>y: {{ marine.starShip.coordinates.y }}</p>
+        </div>
+      </div>
+      <div class="marine__info starship-health">
+        <img src="assets/img/hearts64.png" height="25" width="25" />
+        <p>{{ marine.starShip.health }}</p>
+      </div>
+      <div class="marine__info starship-crewcount">
+        <img
+          src="assets/img/free-icon-help-3996095.png"
+          height="25"
+          width="25"
+        />
+        <p>{{ marine.starShip.crewCount }}</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 25px">
+      Chapter: "{{ marine.chapter.name }}"
+      <div class="marine__info starship-crewcount">
+        <img
+          src="assets/img/free-icon-help-3996095.png"
+          height="25"
+          width="25"
+        />
+        <p>{{ marine.chapter.marinesCount }}</p>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="editMarine()">Изменить</button>
+    <button mat-button (click)="deleteMarine()">Удалить</button>
+  </mat-card-actions>
+</mat-card>

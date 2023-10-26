@@ -1,0 +1,9 @@
+<div class="marine-add__wrapper">
+  <h1 mat-dialog-title>Unload all marines</h1>
+  <mat-dialog-content> </mat-dialog-content>
+  <input [(ngModel)]="id" type="number" min="0" />
+  <mat-dialog-actions align="end">
+    <button mat-button>Закрыть</button>
+    <button mat-button (click)="unloadMarines()">Выгрузить</button>
+  </mat-dialog-actions>
+</div>

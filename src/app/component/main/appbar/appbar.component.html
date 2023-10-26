@@ -1,0 +1,45 @@
+<div class="appbar__block">
+  <a [routerLink]="['/']">
+    <img src="assets/img/devil68-svg.svg" height="40" width="40" />
+  </a>
+  <div class="appbar__navigate">
+    <a
+      class="appbar__link spacemarine"
+      [class.active]="checkSpaceMarineRoute()"
+    >
+      SpaceMarines
+      <mat-icon>keyboard_arrow_down</mat-icon>
+      <div class="link__actions spacemarine" (click)="actionBlockClick($event)">
+        <button mat-button (click)="openAddMarineDialog()">Add Marine</button>
+        <button mat-button (click)="openGetMarineByIdDialog()">
+          Get Marine By id
+        </button>
+        <button mat-button (click)="redirectToFirstPage()">First page</button>
+
+        <button mat-button (click)="openLowerAchievs()">
+          Get Lower Achievs
+        </button>
+
+        <button mat-button (click)="getUniqueValueHeartCnt()">
+          unique values of the heart Count
+        </button>
+
+        <button mat-button (click)="openPatternDialog()">
+          open Pattern Dialog
+        </button>
+      </div>
+    </a>
+    <a class="appbar__link"
+      >SpaceShips <mat-icon>keyboard_arrow_down</mat-icon>
+      <div class="link__actions" (click)="actionBlockClick($event)">
+        <button mat-button (click)="openCreateStarShipDialog()">
+          Create StarShip
+        </button>
+
+        <button mat-button (click)="openUnloadMarinesFromShipDialog()">
+          Unload all marines from ship
+        </button>
+      </div>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="sort__wrapper">
+  <h1 mat-dialog-title>FILTER</h1>
+  <mat-dialog-content>
+    <div
+      class="sort-block"
+      *ngFor="let filterControl of filterArray; let index = index"
+    >
+      <div class="select__wrapper">
+        <div class="select__block">
+          <mat-select [formControl]="filterControl.name">
+            <mat-option *ngFor="let i of fieldsNames" [value]="i">{{
+              i
+            }}</mat-option>
+          </mat-select>
+        </div>
+      </div>
+      <div class="select__wrapper">
+        <div class="select__block">
+          <mat-select [formControl]="filterControl.filter">
+            <mat-option *ngFor="let i of filter" [value]="i">{{
+              i
+            }}</mat-option>
+          </mat-select>
+        </div>
+      </div>
+      <span class="equal-text">=</span>
+      <div>
+        <input [formControl]="filterControl.value" />
+      </div>
+      <button
+        (click)="deleteSortControl(index)"
+        matRipple
+        class="delete-button"
+      >
+        <mat-icon>delete_outline</mat-icon>
+      </button>
+    </div>
+  </mat-dialog-content>
+  <button mat-button (click)="addSortControl()" style="margin-left: 20px">
+    Добавить фильтр
+  </button>
+  <mat-dialog-actions align="end">
+    <button mat-button matDialogClose="">Закрыть</button>
+    <button mat-button (click)="saveSortParams()">Применить</button>
+  </mat-dialog-actions>
+</div>

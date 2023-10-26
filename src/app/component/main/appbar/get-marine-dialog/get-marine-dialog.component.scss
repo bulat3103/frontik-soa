@@ -1,0 +1,31 @@
+.marine-add {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    .mdc-dialog__content {
+      width: 100%;
+    }
+
+    .mdc-dialog__actions {
+      width: 50%;
+      justify-content: space-between;
+    }
+
+    input {
+      height: 60px;
+      width: 40%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-size: 1rem;
+      padding: 0 14px;
+    }
+  }
+}
+
+
+
+

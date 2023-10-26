@@ -1,0 +1,49 @@
+.marine-add {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    .mdc-dialog__content {
+      width: 100%;
+    }
+
+    .mdc-dialog__actions {
+      width: 50%;
+      justify-content: space-between;
+    }
+
+    input {
+      height: 40px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-size: 1rem;
+      padding: 0 14px;
+    }
+
+    form div:last-child {
+      input {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__coordinates {
+    input {
+      width: 80%;
+    }
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.select__block {
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+}

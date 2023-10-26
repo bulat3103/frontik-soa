@@ -1,0 +1,26 @@
+<div class="marine-add__wrapper">
+  <h1 mat-dialog-title>Get by pattern</h1>
+  <mat-dialog-content>
+    <form [formGroup]="form">
+      <div class="marine-add__category">
+        <span>Field:</span>
+        <div class="select__block">
+          <mat-select formControlName="field">
+            <mat-option></mat-option>
+            <mat-option *ngFor="let i of arr" [value]="i">{{ i }}</mat-option>
+          </mat-select>
+        </div>
+      </div>
+
+      <div class="marine-add__value" style="margin-top: 15px">
+        <span>Value:</span>
+        <input formControlName="value" type="text" />
+      </div>
+    </form>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-button matDialogClose="">Закрыть</button>
+    <button mat-button (click)="getMarines()">Показать</button>
+  </mat-dialog-actions>
+</div>

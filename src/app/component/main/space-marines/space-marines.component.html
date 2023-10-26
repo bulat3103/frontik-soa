@@ -1,0 +1,66 @@
+<div class="filters__block" *ngIf="!isLoading">
+  <button mat-button (click)="openSortDialog()">Сортировка</button>
+  <button mat-button (click)="openFilterDialog()">Фильтры</button>
+</div>
+
+<div class="marines__block" *ngIf="!isLoading">
+  <ng-container *ngFor="let marine of spaceMarines">
+    <app-space-marine-card
+      [marine]="marine"
+      (onEditOrDelete)="reloadMarinesArray()"
+    ></app-space-marine-card>
+  </ng-container>
+</div>
+
+<div class="page-changer" *ngIf="!isLoading">
+  <button
+    class="page-changer__button"
+    mat-button
+    (click)="prevPage()"
+    [disabled]="checkMinPage()"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      enable-background="new 0 0 24 24"
+      height="100"
+      viewBox="0 0 24 24"
+      width="100"
+    >
+      <rect fill="none" height="100" width="100" />
+      <g>
+        <polygon
+          [class.disableColor]="checkMinPage()"
+          points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"
+        />
+      </g>
+    </svg>
+  </button>
+  <button
+    class="page-changer__button"
+    mat-button
+    (click)="nextPage()"
+    [disabled]="checkMaxPage()"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      enable-background="new 0 0 24 24"
+      height="100"
+      viewBox="0 0 24 24"
+      width="100"
+    >
+      <g>
+        <path d="M0,0h24v24H0V0z" fill="none" />
+      </g>
+      <g>
+        <polygon
+          [class.disableColor]="checkMaxPage()"
+          points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+
+<div class="loading" *ngIf="isLoading">
+  <mat-spinner></mat-spinner>
+</div>

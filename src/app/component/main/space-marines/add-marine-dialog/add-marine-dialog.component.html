@@ -1,0 +1,74 @@
+<div class="marine-add__wrapper">
+  <h1 mat-dialog-title>Add Marine</h1>
+  <mat-dialog-content>
+    <form [formGroup]="form">
+      <div class="marine-add__name">
+        <span>Name:</span>
+        <input formControlName="name" />
+      </div>
+      <div class="marine-add__coordinates">
+        <span>Coordinates:</span>
+        <div>
+          <div>x: <input formControlName="x" type="number" /></div>
+          <div>y: <input formControlName="y" type="number" max="4" /></div>
+        </div>
+      </div>
+      <div class="marine-add__health">
+        <span>Health:</span>
+        <input formControlName="health" type="number" min="0" />
+      </div>
+      <div class="marine-add__heartCount">
+        <span>HeartCount:</span>
+        <input formControlName="heartCount" type="number" min="0" />
+      </div>
+      <div class="marine-add__category">
+        <span>Category:</span>
+        <div class="select__block">
+          <mat-select formControlName="category">
+            <mat-option></mat-option>
+            <mat-option *ngFor="let i of arr" [value]="i">{{ i }}</mat-option>
+          </mat-select>
+        </div>
+      </div>
+
+      <div class="marine-add__achievements">
+        <span>Achievements:</span>
+        <input formControlName="achievements" />
+      </div>
+
+      <div class="marine-add__chapterName">
+        <span>ChapterName:</span>
+        <input formControlName="chapterName" />
+      </div>
+
+      <div class="marine-add__chapterMarinesCount">
+        <span>ChapterMarinesCount:</span>
+        <input
+          formControlName="chapterMarinesCount"
+          type="number"
+          min="1"
+          max="1000"
+        />
+      </div>
+
+      <div class="marine-add__starshipId">
+        <span>StarshipId:</span>
+        <mat-checkbox style="margin-left: 20px" [formControl]="isStarshipNull"
+          >Starship id null:</mat-checkbox
+        >
+
+        <input
+          formControlName="starshipId"
+          [class.disabledInput]="isStarshipNull.value"
+          type="number"
+          min="0"
+        />
+      </div>
+    </form>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-button matDialogClose="">Закрыть</button>
+    <button mat-button (click)="addMarine()">Добавить</button>
+  </mat-dialog-actions>
+</div>

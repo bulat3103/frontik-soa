@@ -1,0 +1,37 @@
+<div class="marine-add__wrapper">
+  <h1 mat-dialog-title>Create Ship</h1>
+  <mat-dialog-content>
+    <form [formGroup]="form">
+      <div class="marine-add__id">
+        <span>Id:</span>
+        <input formControlName="id" type="number"/>
+      </div>
+
+      <div class="marine-add__name">
+        <span>Name:</span>
+        <input formControlName="name"/>
+      </div>
+      <div class="marine-add__coordinates">
+        <span>Coordinates:</span>
+        <div>
+          <div>x: <input formControlName="x" type="number"/></div>
+          <div>y: <input formControlName="y" type="number" max="4"/></div>
+        </div>
+      </div>
+      <div class="marine-add__health">
+        <span>Health:</span>
+        <input formControlName="health" type="number" min="0"/>
+      </div>
+
+      <div class="marine-add__crewCount">
+        <span>crewCount:</span>
+        <input formControlName="crewCount" type="number"/>
+      </div>
+    </form>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-button matDialogClose="">Закрыть</button>
+    <button mat-button (click)="createShip()">Добавить</button>
+  </mat-dialog-actions>
+</div>

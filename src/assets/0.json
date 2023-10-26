@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "Example",
+    "coordinates": {
+      "x": 0,
+      "y": 4
+    },
+    "creationDate": "2023-09-01T00:00:00Z",
+    "health": 2,
+    "heartCount": 3,
+    "achievements": "God",
+    "category": "TERMINATOR",
+    "chapter": {
+      "name": "Example",
+      "marinesCount": 8
+    },
+    "starship": {
+      "id": 0,
+      "name": "string",
+      "coordinates": {
+        "x": 0,
+        "y": 4
+      },
+      "crewCount": 0,
+      "health": 100
+    }
+  },
+  {
+    "id": 2,
+    "name": "Example",
+    "coordinates": {
+      "x": 0,
+      "y": 4
+    },
+    "creationDate": "2023-09-01T00:00:00Z",
+    "health": 2,
+    "heartCount": 3,
+    "achievements": "God",
+    "category": "TERMINATOR",
+    "chapter": {
+      "name": "Example",
+      "marinesCount": 8
+    },
+    "starship": {
+      "id": 0,
+      "name": "string",
+      "coordinates": {
+        "x": 0,
+        "y": 4
+      },
+      "crewCount": 0,
+      "health": 100
+    }
+  },
+  {
+    "id": 3,
+    "name": "Example",
+    "coordinates": {
+      "x": 0,
+      "y": 4
+    },
+    "creationDate": "2023-09-01T00:00:00Z",
+    "health": 2,
+    "heartCount": 3,
+    "achievements": "God",
+    "category": "TERMINATOR",
+    "chapter": {
+      "name": "Example",
+      "marinesCount": 8
+    },
+    "starship": {
+      "id": 0,
+      "name": "string",
+      "coordinates": {
+        "x": 0,
+        "y": 4
+      },
+      "crewCount": 0,
+      "health": 100
+    }
+  },
+  {
+    "id": 4,
+    "name": "Example",
+    "coordinates": {
+      "x": 0,
+      "y": 4
+    },
+    "creationDate": "2023-09-01T00:00:00Z",
+    "health": 2,
+    "heartCount": 3,
+    "achievements": "God",
+    "category": "TERMINATOR",
+    "chapter": {
+      "name": "Example",
+      "marinesCount": 8
+    },
+    "starship": {
+      "id": 0,
+      "name": "string",
+      "coordinates": {
+        "x": 0,
+        "y": 4
+      },
+      "crewCount": 0,
+      "health": 100
+    }
+  },
+  {
+    "id": 5,
+    "name": "Example",
+    "coordinates": {
+      "x": 0,
+      "y": 4
+    },
+    "creationDate": "2023-09-01T00:00:00Z",
+    "health": 2,
+    "heartCount": 3,
+    "achievements": "God",
+    "category": "TERMINATOR",
+    "chapter": {
+      "name": "Example",
+      "marinesCount": 8
+    },
+    "starship": {
+      "id": 0,
+      "name": "string",
+      "coordinates": {
+        "x": 0,
+        "y": 4
+      },
+      "crewCount": 0,
+      "health": 100
+    }
+  },
+  {
+    "id": 6,
+    "name": "Example",
+    "coordinates": {
+      "x": 0,
+      "y": 4
+    },
+    "creationDate": "2023-09-01T00:00:00Z",
+    "health": 2,
+    "heartCount": 3,
+    "achievements": "God",
+    "category": "TERMINATOR",
+    "chapter": {
+      "name": "Example",
+      "marinesCount": 8
+    },
+    "starship": {
+      "id": 0,
+      "name": "string",
+      "coordinates": {
+        "x": 0,
+        "y": 4
+      },
+      "crewCount": 0,
+      "health": 100
+    }
+  },
+  {
+    "id": 7,
+    "name": "Example",
+    "coordinates": {
+      "x": 0,
+      "y": 4
+    },
+    "creationDate": "2023-09-01T00:00:00Z",
+    "health": 2,
+    "heartCount": 3,
+    "achievements": "God",
+    "category": "TERMINATOR",
+    "chapter": {
+      "name": "Example",
+      "marinesCount": 8
+    },
+    "starship": {
+      "id": 0,
+      "name": "string",
+      "coordinates": {
+        "x": 0,
+        "y": 4
+      },
+      "crewCount": 0,
+      "health": 100
+    }
+  },
+  {
+    "id": 8,
+    "name": "Example",
+    "coordinates": {
+      "x": 0,
+      "y": 4
+    },
+    "creationDate": "2023-09-01T00:00:00Z",
+    "health": 2,
+    "heartCount": 3,
+    "achievements": "God",
+    "category": "TERMINATOR",
+    "chapter": {
+      "name": "Example",
+      "marinesCount": 8
+    },
+    "starship": {
+      "id": 0,
+      "name": "string",
+      "coordinates": {
+        "x": 0,
+        "y": 4
+      },
+      "crewCount": 0,
+      "health": 100
+    }
+  },
+  {
+    "id": 9,
+    "name": "Example",
+    "coordinates": {
+      "x": 0,
+      "y": 4
+    },
+    "creationDate": "2023-09-01T00:00:00Z",
+    "health": 2,
+    "heartCount": 3,
+    "achievements": "God",
+    "category": "TERMINATOR",
+    "chapter": {
+      "name": "Example",
+      "marinesCount": 8
+    },
+    "starship": {
+      "id": 0,
+      "name": "string",
+      "coordinates": {
+        "x": 0,
+        "y": 4
+      },
+      "crewCount": 0,
+      "health": 100
+    }
+  },
+  {
+    "id": 10,
+    "name": "Example",
+    "coordinates": {
+      "x": 0,
+      "y": 4
+    },
+    "creationDate": "2023-09-01T00:00:00Z",
+    "health": 2,
+    "heartCount": 3,
+    "achievements": "God",
+    "category": "TERMINATOR",
+    "chapter": {
+      "name": "Example",
+      "marinesCount": 8
+    },
+    "starship": {
+      "id": 0,
+      "name": "string",
+      "coordinates": {
+        "x": 0,
+        "y": 4
+      },
+      "crewCount": 0,
+      "health": 100
+    }
+  }
+]

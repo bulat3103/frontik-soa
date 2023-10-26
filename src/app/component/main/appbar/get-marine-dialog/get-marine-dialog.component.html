@@ -1,0 +1,11 @@
+<div class="marine-add__wrapper">
+  <h1 mat-dialog-title>Get Marine by Id</h1>
+  <mat-dialog-content>
+  </mat-dialog-content>
+  <input [(ngModel)]="marineId" type="number" min="0">
+  <mat-dialog-actions align="end">
+    <button mat-button>Закрыть</button>
+    <button mat-button (click)="getMarine()">Показать</button>
+  </mat-dialog-actions>
+
+</div>
